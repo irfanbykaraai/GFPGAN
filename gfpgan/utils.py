@@ -29,7 +29,7 @@ class GFPGANer():
         bg_upsampler (nn.Module): The upsampler for the background. Default: None.
     """
 
-    def __init__(self, model_path, upscale=2, arch='clean', channel_multiplier=2, bg_upsampler=None, device=None,model_rootpath):
+    def __init__(self, model_path, upscale=2, arch='clean', channel_multiplier=2, bg_upsampler=None, device=None,model_rootpath=None):
         self.upscale = upscale
         self.bg_upsampler = bg_upsampler
 
